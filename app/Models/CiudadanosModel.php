@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class CiudadanosModel extends Model
 {
     protected $table         = 'ciudadanos';
+    protected $primaryKey = 'dpi';
     protected $allowedFields = [
         'dpi',
         'apellido',
@@ -22,5 +23,7 @@ class CiudadanosModel extends Model
     ];
    
 }
+
+
 
 

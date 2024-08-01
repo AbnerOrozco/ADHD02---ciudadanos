@@ -16,4 +16,47 @@ class Regiones extends BaseController
 
         return view ('regiones',$datos);
     }
+
+    public function nuevoRegion()
+    {
+        return view('Regiones_nuevos');
+        
+    }
+
+    public function agregarRegion()
+    {
+        $datos = [
+            'cod_region' => $this->request->getVar(''),
+            'nombre' => $this->request->getVar(''),
+            'descripcion' => $this->request->getVar('')
+        ];
+        $region = new RegionesModel();
+        $region->insert($datos);
+        return redirect()->route('regiones');
+    }
+
+
+    public function editarRegion($id): string
+    {
+        $region = new RegionesModel();
+        $datos['region']= $region->find($id);
+        return view('regiones_editar');
+    }
+
+    public function actualizarRgion()
+    {
+        $datos =[
+            'nombre' => $this->request->getVar(''),
+            'descripcion' => $this->request->getVar('')
+        ];
+        $region = new RegionesModel();
+        $region->update($this->request->getVar(''), $datos);
+        return redirect()->route('regiones')
+
+    }
+
+
 }
+
+
+// 'cod_region', 'nombre', 'descripcion',

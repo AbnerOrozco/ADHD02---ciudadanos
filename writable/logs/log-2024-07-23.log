@@ -1,0 +1,28 @@
+CRITICAL - 2024-07-23 17:52:18 --> ErrorException: Undefined array key "plan_id"
+[Method: GET, Route: ver_Ciudadanos]
+in APPPATH\Views\ciudadanos.php on line 82.
+ 1 APPPATH\Views\ciudadanos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_id"', 'C:\\xampp\\htdocs\\ci4_proyectos\\ci4_ciudadanos\\app\\Views\\ciudadanos.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4_proyectos\\ci4_ciudadanos\\app\\Views\\ciudadanos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ciudadanos', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(18): view('ciudadanos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ciudadanos->Ciudadanos()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 17:52:29 --> ErrorException: Undefined array key "plan_id"
+[Method: GET, Route: ver_Ciudadanos]
+in APPPATH\Views\ciudadanos.php on line 82.
+ 1 APPPATH\Views\ciudadanos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_id"', 'C:\\xampp\\htdocs\\ci4_proyectos\\ci4_ciudadanos\\app\\Views\\ciudadanos.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4_proyectos\\ci4_ciudadanos\\app\\Views\\ciudadanos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ciudadanos', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(18): view('ciudadanos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ciudadanos->Ciudadanos()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
